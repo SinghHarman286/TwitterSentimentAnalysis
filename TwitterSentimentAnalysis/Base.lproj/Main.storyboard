@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1E4-Iq-oLi">
+            <objects>
+                <viewController id="s53-mw-rG1" customClass="ViewController" customModule="Twittermenti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mmj-nt-i0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alh-nb-CU3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="BD8-nD-3NF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FT-lK-Esa">
+                                                <rect key="frame" x="153" y="0.0" width="108" height="652"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vE3-Af-u6B">
+                                                <rect key="frame" x="0.0" y="707" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sbA-3y-Fc0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-PC-bKO">
+                                                <rect key="frame" x="157.5" y="812" width="99" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="l4t-bs-pRT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Predict!">
+                                                    <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="predictButtonPressed:" destination="s53-mw-rG1" eventType="touchUpInside" id="oFH-Yn-NYZ"/>
+                                                    <action selector="predictPressed:" destination="s53-mw-rG1" eventType="touchUpInside" id="tvt-l6-6e0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vE3-Af-u6B" firstAttribute="leading" secondItem="BD8-nD-3NF" secondAttribute="leading" id="MIR-ky-DLh"/>
+                                            <constraint firstAttribute="trailing" secondItem="vE3-Af-u6B" secondAttribute="trailing" id="ezr-Ir-uVr"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BD8-nD-3NF" firstAttribute="leading" secondItem="alh-nb-CU3" secondAttribute="leading" id="BXd-Xg-pgf"/>
+                                    <constraint firstAttribute="bottom" secondItem="BD8-nD-3NF" secondAttribute="bottom" id="Cwy-WY-rBb"/>
+                                    <constraint firstItem="BD8-nD-3NF" firstAttribute="top" secondItem="alh-nb-CU3" secondAttribute="top" id="a0D-gm-BZF"/>
+                                    <constraint firstAttribute="trailing" secondItem="BD8-nD-3NF" secondAttribute="trailing" id="tJq-nj-GkP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="alh-nb-CU3" firstAttribute="leading" secondItem="jfV-rU-UVq" secondAttribute="leading" id="Nhf-pO-c3T"/>
+                            <constraint firstItem="alh-nb-CU3" firstAttribute="top" secondItem="mmj-nt-i0h" secondAttribute="top" id="TY2-lw-SGZ"/>
+                            <constraint firstItem="alh-nb-CU3" firstAttribute="trailing" secondItem="jfV-rU-UVq" secondAttribute="trailing" id="lLG-FK-jHY"/>
+                            <constraint firstItem="alh-nb-CU3" firstAttribute="bottom" secondItem="jfV-rU-UVq" secondAttribute="bottom" id="mMu-KO-tpa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jfV-rU-UVq"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="alh-nb-CU3" id="vuP-c6-3Ph"/>
+                        <outlet property="emojiLabel" destination="8FT-lK-Esa" id="eQT-aD-GdN"/>
+                        <outlet property="sentimentLabel" destination="8FT-lK-Esa" id="yul-Li-WV9"/>
+                        <outlet property="textField" destination="vE3-Af-u6B" id="FP9-xJ-z8z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52u-YY-zTs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
