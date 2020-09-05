@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s53-mw-rG1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="1E4-Iq-oLi">
             <objects>
-                <viewController id="s53-mw-rG1" customClass="ViewController" customModule="Twittermenti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s53-mw-rG1" customClass="ViewController" customModule="TwitterSentimentAnalysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mmj-nt-i0h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="predictButtonPressed:" destination="s53-mw-rG1" eventType="touchUpInside" id="oFH-Yn-NYZ"/>
-                                                    <action selector="predictPressed:" destination="s53-mw-rG1" eventType="touchUpInside" id="tvt-l6-6e0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -78,7 +77,6 @@
                     <connections>
                         <outlet property="backgroundView" destination="alh-nb-CU3" id="vuP-c6-3Ph"/>
                         <outlet property="emojiLabel" destination="8FT-lK-Esa" id="eQT-aD-GdN"/>
-                        <outlet property="sentimentLabel" destination="8FT-lK-Esa" id="yul-Li-WV9"/>
                         <outlet property="textField" destination="vE3-Af-u6B" id="FP9-xJ-z8z"/>
                     </connections>
                 </viewController>
