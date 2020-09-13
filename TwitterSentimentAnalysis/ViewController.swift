@@ -34,10 +34,11 @@ class ViewController: UIViewController {
         
         if let searchText = textField.text {
             swifter.searchTweet(using: searchText ,lang: "en", count: 100, success: { (results, metadata) in
+                print(results)
                 var tweets = [TweetSentimentClassifierInput]()
                 
                 for i in 0..<100 {
-                    if let tweet = results[i]["full_text"].string {
+                    if let tweet = results[i]["text"].string {
                         let tweetForClassification = TweetSentimentClassifierInput(text: tweet)
                         tweets.append(tweetForClassification)
                     }
