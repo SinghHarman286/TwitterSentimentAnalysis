@@ -4,5 +4,5 @@ An iOS app that uses CoreML and Natural Language Processing Framework to underst
 **Getting Started**
 - Install [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation)
 - Run `pod install` in project directory.
-- 
+- Open `TwitterSentimentAnalysis.xcworkspace` in Xcode (not `TwitterSentimentAnalysis.xcodeproj`)
 - Happy Coding!
